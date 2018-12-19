@@ -73,9 +73,9 @@ var update = function (modifier) {
 
 
   if (
-    tomte.x <= (paket.x + 50)
+    tomte.x <= (paket.x + 25)
     && paket.x <= (tomte.x + 50)
-    && tomte.y <= (paket.y + 50)
+    && tomte.y <= (paket.y + 25)
     && paket.y <= (tomte.y + 50)
   ) {
     ++paketsCaught;
@@ -114,6 +114,12 @@ var render = function () {
   }
   if (paketsCaught > 100){
     bgImage.src = "bg5.png";
+  }
+  if (paketsCaught > 200){
+    bgImage.src = "bg6.png";
+  }
+  if (paketsCaught > 300){
+    bgImage.src = "bg7.png";
   }
 };
 
