@@ -120,6 +120,9 @@ var render = function () {
   }
   if (paketsCaught > 300){
     bgImage.src = "bg7.png";
+  }
+  if (paketsCaught > 400){
+    bgImage.src = "bg8.png";
     tomteImage.src = "tomte2.png";
   }
 };
