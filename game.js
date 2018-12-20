@@ -50,22 +50,22 @@ var reset = function () {
 };
 
 var update = function (modifier) {
-  if (38 in keysDown) { // Player holding up
+  if (38 in keysDown) {
     if (tomte.y > 0) {
     tomte.y -= tomte.speed * modifier;
 }
   }
   if (40 in keysDown) { 
-    if (tomte.y < 410) { // Player holding up
+    if (tomte.y < 410) {
     tomte.y += tomte.speed * modifier;
 }
   }
-  if (37 in keysDown) { // Player holding left
+  if (37 in keysDown) {
     if (tomte.x > 0){
     tomte.x -= tomte.speed * modifier;
 }
   }
-  if (39 in keysDown) { // Player holding right
+  if (39 in keysDown) {
     if (tomte.x < 490){
     tomte.x += tomte.speed * modifier;
 }
@@ -120,6 +120,7 @@ var render = function () {
   }
   if (paketsCaught > 300){
     bgImage.src = "bg7.png";
+    tomteImage.src = "tomte2.png";
   }
 };
 
